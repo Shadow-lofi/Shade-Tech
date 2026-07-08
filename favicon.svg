@@ -1,37 +1,11 @@
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ShadeTech">
   <defs>
+    <style>@font-face{font-family:"ShadeTechPF";src:url(data:font/woff2;base64,d09GMgABAAAAAANcABIAAAAACRQAAAL5AAEz+AAAAAAAAAAAAAAAAAAAAAAAAAAAGyAcKj9IVkFSNAZgP1NUQVSBDgA0L2ARCAo0TzAsATYCJAMICwYABCAFiUYHIAwHG/EHERWcrSm+OuANqY++hSGKWhWwkKOny4Bg/MJAqIrX6+zzPp7/fr8+1z73NcEABxkVkCJLoNBl1JRPxSOVz1eJQk3Y1++vQyo7l6wEID/4i25wA8BYj5tuUAVAx62y5st/3Eaf//sJ+vUB/rh/TXV8pBOrosrjzxZeDVI+fjT/+I7v+GYV2P6ud+6j/dzIyMmTJHlsWxWM7WYPOe+Cy64z1MEKIBg7wEEKYps/ePcjD9uK/g8CNuLsdirYLMJZzqIQfKerc/OyHvVS3YRLDUvusDHHURS8pguuu4gPrFnr5qse3fP+IVBVn7CXJmKosNEA+6nH77n3keC+R+5+MDMxt4dDnOAcV7hFQyV5mXoHgVR+5YBWNzHYgei1vSD99oxjE5U5HIWGjZoYw85e6GqDtRWxWh0S0FoqsVHfeELuZbanqFokOIaDFPmVDtPgmRulm8Mn4/Roe5FJ+jJuJlORFQtQoEMwxWZAB8j0zutvPBg8aHDIzlUHJhLl+xWz6ZICQcB2BbaD0RMx1j3hLBWz/Pzdk0GO/XNn+tzitN+Grf2Er3e/N3xz1q7//2216N7unkdfgfABgl8hwv9XzxB6zKpjnJb/nSoobww83xcA0Ak2Z65JNyL7cUDslf1Q5jkPzTm5Bp2j8jp6tucTpe+IfGsRpjVFzHMeyrS2olnWfugM6zj0rK/T0DeuKzBwUt2EoRPqZYycUp9h7JgGE6e1YzB1XHsYM9O26znmxu1N5xK5Xh4oISPod3sT+EgGDwvlHKkANir0XDe2j8DVjESwjCPpBiFUZRR54bzTEerixbhNXLtDcrXikAnBUkZ3ejhr1deakCZTeLEkEiQhusSd61TDDdnjpqvcy1XaYOTVOBI/NOi1OYqDxW7mYSGtZEQrp0vmrUKxH6uImpmGHr0sL//ZX4hc2W2mYvvNbLVyLWrWbbMoQL5nzSRGWgurayOnSa/CjT17tFsO6lG817EApZ5XBniSY7RqKYLFy+rKThsrj2ff6gIAAAA=) format("woff2");font-weight:700;font-style:normal;}</style>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#0A0A0F"/>
       <stop offset="1" stop-color="#1C1F2A"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0.15" y1="0.05" x2="0.85" y2="0.95">
-      <stop offset="0" stop-color="#ffe488"/>
-      <stop offset="0.5" stop-color="#d9b24a"/>
-      <stop offset="1" stop-color="#a9781d"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
-      <stop offset="0" stop-color="#c6a13a" stop-opacity="0.32"/>
-      <stop offset="1" stop-color="#c6a13a" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- The ×͜× face: two "×" eyes + a smile, drawn as strokes -->
-    <g id="face" fill="none" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="150" y1="176" x2="214" y2="240"/>
-      <line x1="214" y1="176" x2="150" y2="240"/>
-      <line x1="298" y1="176" x2="362" y2="240"/>
-      <line x1="362" y1="176" x2="298" y2="240"/>
-      <path d="M196 278 Q256 344 316 278"/>
-    </g>
   </defs>
-
-  <!-- Dark tile + gold glow, matching the site's #0A0A0F → #1C1F2A theme -->
   <rect width="512" height="512" rx="116" fill="url(#bg)"/>
-  <rect width="512" height="512" rx="116" fill="url(#glow)"/>
-
-  <!-- Hairline gold frame -->
-  <rect x="30" y="30" width="452" height="452" rx="90" fill="none" stroke="#c6a13a" stroke-opacity="0.38" stroke-width="3"/>
-
-  <!-- Soft shadow, then the gold face -->
-  <use href="#face" transform="translate(4 6)" stroke="#000000" stroke-opacity="0.35"/>
-  <use href="#face" stroke="url(#gold)"/>
+  <text x="266" y="334" text-anchor="middle" font-family="ShadeTechPF" font-weight="700" font-size="224" fill="#ffffff">×͜×</text>
 </svg>
