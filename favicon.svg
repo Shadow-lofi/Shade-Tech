@@ -9,25 +9,29 @@
       <stop offset="0.5" stop-color="#d9b24a"/>
       <stop offset="1" stop-color="#a9781d"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6">
-      <stop offset="0" stop-color="#c6a13a" stop-opacity="0.34"/>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#c6a13a" stop-opacity="0.32"/>
       <stop offset="1" stop-color="#c6a13a" stop-opacity="0"/>
     </radialGradient>
+
+    <!-- The ×͜× face: two "×" eyes + a smile, drawn as strokes -->
+    <g id="face" fill="none" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="150" y1="176" x2="214" y2="240"/>
+      <line x1="214" y1="176" x2="150" y2="240"/>
+      <line x1="298" y1="176" x2="362" y2="240"/>
+      <line x1="362" y1="176" x2="298" y2="240"/>
+      <path d="M196 278 Q256 344 316 278"/>
+    </g>
   </defs>
 
-  <!-- Dark tile matching the site's #0A0A0F → #1C1F2A gradient -->
+  <!-- Dark tile + gold glow, matching the site's #0A0A0F → #1C1F2A theme -->
   <rect width="512" height="512" rx="116" fill="url(#bg)"/>
   <rect width="512" height="512" rx="116" fill="url(#glow)"/>
 
-  <!-- Hairline gold frame for a premium, framed feel -->
+  <!-- Hairline gold frame -->
   <rect x="30" y="30" width="452" height="452" rx="90" fill="none" stroke="#c6a13a" stroke-opacity="0.38" stroke-width="3"/>
 
-  <!-- Serif "S" monogram (Georgia echoes the site's Playfair headings) -->
-  <text x="260" y="374" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
-        font-weight="700" font-size="340" fill="#000000" fill-opacity="0.38">S</text>
-  <text x="256" y="370" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
-        font-weight="700" font-size="340" fill="url(#gold)">S</text>
-
-  <!-- A small terminal cursor — a quiet nod to ShadeTech.dev -->
-  <rect x="330" y="332" width="34" height="14" rx="4" fill="#ffdb4d"/>
+  <!-- Soft shadow, then the gold face -->
+  <use href="#face" transform="translate(4 6)" stroke="#000000" stroke-opacity="0.35"/>
+  <use href="#face" stroke="url(#gold)"/>
 </svg>
